@@ -8,6 +8,7 @@ public class MangaApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MangaApiApplication.class, args);
+		System.out.println("Spring com webflux");
 	}
 
 }
