@@ -1,4 +1,4 @@
-package com.digitalinnovation.livecoding.config;
+package com.thushima.MangaAPI.config;
 
 
 import java.util.Arrays;
@@ -43,7 +43,5 @@ public class MangaTable {
             System.err.println("Não foi possível criar a tabela");
             System.err.println(e.getMessage());
         }
-
     }
-
 }

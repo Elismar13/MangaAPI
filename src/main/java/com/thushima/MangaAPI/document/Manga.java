@@ -1,10 +1,12 @@
 package com.thushima.MangaAPI.document;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
-import lombok.Data;
 import lombok.NoArgsConstructor;
-import nonapi.io.github.classgraph.json.Id;
+import lombok.Data;
+
+import org.springframework.data.annotation.Id;
 
 @Data
 @NoArgsConstructor
@@ -14,13 +16,13 @@ public class Manga {
     @DynamoDBHashKey(attributeName = "id")
     private String id;
 
-    @DynamoDBHashKey(attributeName = "name")
+    @DynamoDBAttribute(attributeName = "name")
     private String name;
 
-    @DynamoDBHashKey(attributeName = "author")
+    @DynamoDBAttribute(attributeName = "author")
     private String author;
 
-    @DynamoDBHashKey(attributeName = "chapters")
+    @DynamoDBAttribute(attributeName = "chapters")
     private Long chapters;
 
     public String getId() {
@@ -29,6 +31,30 @@ public class Manga {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public Long getChapters() {
+        return chapters;
+    }
+
+    public void setChapters(Long chapters) {
+        this.chapters = chapters;
     }
 
     public Manga(String id, String name, String author, Long chapters) {
