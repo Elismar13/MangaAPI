@@ -21,7 +21,7 @@ public class DynamoConfig {
     private String amazonAWSAccessKey;
 
     @Value("${aws_secret_access_key}")
-    private String AmazonAWSSecretKey;
+        private String AmazonAWSSecretKey;
 
     @Bean()
     public AmazonDynamoDB amazonDynamoDB () {

@@ -19,7 +19,7 @@ public class MangaData {
                 .build();
         DynamoDB dynamoDB = new DynamoDB(client);
 
-        Table table = dynamoDB.getTable("Manga_Api_Table");
+            Table table = dynamoDB.getTable("Manga_Api_Table");
 
         Item manga = new Item()
                 .withPrimaryKey("id", "2")
