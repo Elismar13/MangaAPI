@@ -45,12 +45,11 @@ public class MangaApiApplicationTests {
 
 	@Test
 	public void deleteManga(){
-		webTestClient.delete().uri(MANGA_ENDPOINT_LOCAL.concat("/{id}"),"36")
+		webTestClient.delete().uri(MANGA_ENDPOINT_LOCAL.concat("/{id}"),"15")
 				.accept(MediaType.APPLICATION_JSON)
 				.exchange()
 				.expectStatus().isNotFound()
 				.expectBody(Void.class);
-
 	}
 }
 
