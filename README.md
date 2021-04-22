@@ -7,20 +7,6 @@ O MangaAPI tem como objetivo oferecer uma api reativa em Java para cadrasto e co
 
 <div align="center"><img src='.github/header.png' ></div>
  <br/>
- 
-## Instalação
-
-OS X & Linux:
-
-```sh
-java -jar mangaapi.jar
-```
-
-Windows:
-
-```sh
-java -jar mangaapi.jar
-```
 
 ## :chart: Exemplo de uso
 
