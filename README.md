@@ -3,8 +3,9 @@
 
 O MangaAPI tem como objetivo oferecer uma api reativa em Java para cadrasto e controle de mangás.
 
-![](.github/header.png)
-
+<div align="center"><img src='.github/header.png' ></div>
+ <br/>
+ 
 ## Instalação
 
 OS X & Linux:
